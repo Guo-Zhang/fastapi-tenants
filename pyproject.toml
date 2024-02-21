@@ -1,15 +1,23 @@
-[tool.poetry]
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[project]
+authors = [
+    {name = "QuantTide Inc.", email = "opensource@quanttide.com"},
+]
+requires-python = ">=3.9,<4.0"
+dependencies = [
+    "pydantic>=2.6.1",
+    "fastapi>=0.109.2",
+    "sqlalchemy>=2.0.27",
+]
 name = "fastapi-tenants"
 version = "0.1.0-alpha.1"
 description = "Multi-Tenancy for FastAPI"
-authors = ["QuantTide Inc. <opensource@quanttide.com>"]
 readme = "README.md"
-packages = [{include = "fastapi_tenants"}]
 
-[tool.poetry.dependencies]
-python = "^3.9"
-
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+[tool.pdm.build]
+includes = [
+    "fastapi_tenants",
+]

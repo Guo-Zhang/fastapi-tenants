@@ -1,8 +1,22 @@
 # `fastapi-tenants`
 
-Multi-Tenancy for FastAPI. 
+Multi-Tenancy with FastAPI 
 
-Inspired by the excellent article, 
-["Multitenancy with FastAPI, SQLAlchemy and PostgreSQL"](https://mergeboard.com/blog/6-multitenancy-fastapi-sqlalchemy-postgresql/),
-and the excellent example project [fastapi-multitenant-example-app](https://github.com/mgurg/fastapi-multitenant-example-app).
+## Installation
 
+```shell
+pip install fastapi-tenants
+```
+
+## Usage
+
+```python
+```
+
+## License
+
+[BSD 3.0](./LICENSE)
+
+## Contributors
+
+- [@Guo-Zhang](https://github.com/Guo-Zhang)
